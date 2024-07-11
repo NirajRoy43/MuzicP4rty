@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Sync</title>
+</head>
+<body>
+  <div id="app">
+    <div id="auth">
+      <h2>Register/Login</h2>
+      <form id="auth-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit" id="register-btn">Register</button>
+        <button type="submit" id="login-btn">Login</button>
+      </form>
+    </div>
+    <div id="controls">
+      <input type="text" id="search" placeholder="Search for music">
+      <button id="search-btn">Search</button>
+      <div id="suggestions"></div>
+      <div id="results"></div>
+    </div>
+    <div id="chat">
+      <h2>Chat</h2>
+      <div id="messages"></div>
+      <input type="text" id="chat-input" placeholder="Type a message">
+      <button id="send-chat">Send</button>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

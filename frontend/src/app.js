@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 const server = http.createServer(app);
-const socket = io.connect('http://localhost:4000');
+const socket = io.connect('https://muzicp4rty.onrender.com');
 
 document.getElementById('search-btn').addEventListener('click', async () => {
   const query = document.getElementById('search').value;

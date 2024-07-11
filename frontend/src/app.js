@@ -19,7 +19,7 @@ document.getElementById('search-btn').addEventListener('click', async () => {
   const resultsDiv = document.getElementById('results');
   resultsDiv.innerHTML = '';
   try {
-    const response = await axios.get(`http://localhost:4000/search?q=${query}`);
+    const response = await axios.get(`https://muzicp4rty.onrender.com/search?q=${query}`);
     response.data.forEach(item => {
       const result = document.createElement('div');
       result.textContent = item.snippet.title;
@@ -37,7 +37,7 @@ const loadSuggestions = async () => {
   const suggestionsDiv = document.getElementById('suggestions');
   suggestionsDiv.innerHTML = '';
   try {
-    const response = await axios.get(`http://localhost:4000/suggestions`);
+    const response = await axios.get(`https://muzicp4rty.onrender.com/suggestions`);
     response.data.forEach(item => {
       const suggestion = document.createElement('div');
       suggestion.textContent = item.snippet.title;

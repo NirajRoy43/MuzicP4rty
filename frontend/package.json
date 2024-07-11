@@ -1,0 +1,11 @@
+{
+  "name": "music-sync-frontend",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "dependencies": {
+    "socket.io-client": "^4.0.1"
+  },
+  "scripts": {
+    "start": "node src/app.js"
+  }
+}
